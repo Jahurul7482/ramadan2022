@@ -1,0 +1,1 @@
+This Calculator Calculate Your Jakah If you have equivalent of assets about 7.5 vori gold.

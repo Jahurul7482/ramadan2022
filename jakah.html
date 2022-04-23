@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- page title -->
+    <title>Calculate Jakah</title>
+
+    <!-- page icon -->
+    <link
+      rel="shortcut icon"
+      href="./images/jakahicon.png"
+      type="image/x-icon"
+    />
+    <!-- css links -->
+    <link rel="stylesheet" href="jakah.css" />
+  </head>
+  <body>
+    <header>
+      <div class="content">
+        <h1>আদায় যোগ্য যাকাত এর হিসেবঃ</h1>
+        <p>
+          যাকাত আপনার সম্পদকে পবিত্র করে। নিসাব পরিমান সম্পত্তির মালিক হলে
+          অবশ্যই যাকাত আদায় করুন।
+        </p>
+        <p>যাকাত দুইভাবে হিসেব করা হয়ে থাকে।</p>
+        <ul>
+          <!-- gold price 1 vori = BDT 52,586. -->
+          <li>
+            স্বর্ণের দাম অনুযায়ী। অর্থাৎ ৭.৫০ ভরি স্বর্ণের মূল্য পরিমান সম্পত্তি
+            হলে।
+          </li>
+          <!-- silver price 1 vori = BDT 1520. -->
+          <li>
+            রুপার দাম অনুযায়ী। অর্থাৎ ৫২.৫ ভরি রুপার মূল্য পরিমান সম্পত্তি হলে।
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <div class="calculator">
+      <form action="#" method="post">
+        <div class="assets">
+
+          <!-- value of total jakah payble assets -->
+          <div>
+            <h3>আপনার সম্পত্তির পরিমানঃ</h3>
+            <label for="gold">স্বর্ণের মূল্য</label>
+            <input type="number" id="gold"/><br />
+            <label for="silver">রুপার মূল্য</label>
+            <input type="number" id="silver"/><br />
+            <label for="creadit">নগদ অর্থ</label>
+            <input type="number" id="creadit"/><br />
+            <label for="bankBalance">ব্যাংকে জমা</label>
+            <input type="number" id="bankBalance"/><br />
+            <label for="fand">প্রভিডেন্ট ফান্ড</label>
+            <input type="number" id="fand" /><br />
+            <label for="remitence">বৈদেশিক মুদ্রা</label>
+            <input type="number" id="remitence" /><br />
+          </div>
+        </div>
+        <div class="assets">
+          <div>
+            <label for="insurance">বীমা</label>
+            <input type="number" id="insurance" /><br />
+            <label for="payloan">ঋণ প্রদান</label>
+            <input type="number" id="payloan" /><br />
+            <label for="forsecurity">সিকিউরিটি প্রদান</label>
+            <input type="number" id="forsecurity" /><br />
+            <label for="forsale">বিক্রির জন্য ক্রয়</label>
+            <input type="number" id="forsale" /><br />
+            <label for="metarials">ফ্যাক্টরীর কাচামাল</label>
+            <input type="number" id="metarials" /><br />
+            <label for="sharemarket">শেয়ার বাজার বিনিয়োগ</label>
+            <input type="number" id="sharemarket"/><br />
+          </div>
+        </div>
+        <div>
+          <div class="due">
+            <!-- substract loan -->
+            <h3>আপনার ঋণঃ</h3>
+            <label for="loan">ব্যাংক থেকে ঋণ গ্রহন</label>
+            <input type="number" id="loan"/><br />
+            <label for="rent">ভারা প্রদান</label>
+            <input type="number" id="rent"/><br />
+            <label for="salery">বেতন প্রদান</label>
+            <input type="number" id="salery"/><br />
+            <label for="due">বাকি ক্রয়</label>
+            <input type="number" id="due"/><br />
+          </div>
+          <div class="calculate">
+            <label for="totalassets">আপনার সম্পত্তির পরিমানঃ</label>
+            <input type="text" name="assetsvalue" id="totalassets" readonly>
+            <label for="jakahpayable">আদায় যোগ্য যাকাতের পরিমানঃ</label>
+            <input type="text" name="jakahpayable" id="jakahpayable" readonly>
+            <button class="btn resetbtn" type="reset">রিসেট</button>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="button">
+        <button class="btn calculatebtn" onclick="PayableJakah()">আপনার হিসেব দেখুন</button>
+    </div>
+
+    <!-- background effect -->
+    <ul class="bg-bubbles">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+    </ul>
+
+    <footer>
+      <p>Copyright &copy 2022 Alright Reserved ListenCoders & Jahurul Islam</p>
+    </footer>
+
+    <script src="./jakah.js"></script>
+  </body>
+</html>
